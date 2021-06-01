@@ -1,0 +1,18 @@
+{
+  "$id": "Answers-Support",
+  "$schema": "https://schema.yext.com/config/pages/site-config/v1",
+  "siteName": "Answers - Support",
+  "repoConfig": {
+    "targetRepoName": "zendesk-template-answers-site-${{businessId}}.com",
+    "templateRepo": "github.com/yext-pages/answers-template-help-site"
+  },
+  "publishingConfig": {
+    "pinnedStagingBranchName": "refs/heads/master",
+    "pinnedProductionBranchName": "refs/heads/master",
+    "stagingCredentials": {
+      "username": "test",
+      "password": "test"
+    }
+  },
+  "features": []
+}
