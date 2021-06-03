@@ -6,6 +6,7 @@
     "targetRepoName": "zendesk-template-answers-site-${{businessId}}.com",
     "templateRepo": "github.com/yext-pages/answers-template-help-site"
   },
+  "domain": "supportembed.pagescdn.com",
   "publishingConfig": {
     "pinnedStagingBranchName": "refs/heads/master",
     "pinnedProductionBranchName": "refs/heads/master",
