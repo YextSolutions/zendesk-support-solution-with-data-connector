@@ -1,5 +1,5 @@
 {
-  "$id": "zendesk_help-article-connector",
+  "$id": "zendesk_helparticleconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Zendesk Help Article Connector",
   "entityType": "yext/helpArticle",
