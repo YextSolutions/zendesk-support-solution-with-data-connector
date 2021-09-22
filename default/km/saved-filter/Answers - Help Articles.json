@@ -17,7 +17,7 @@
     "entityType": [
       {
         "entityTypeId": [
-          "yext/helpArticle"
+          "helpArticle"
         ],
         "type": "IS"
       }
