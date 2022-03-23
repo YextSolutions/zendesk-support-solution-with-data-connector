@@ -1,5 +1,5 @@
 {
-  "$id": "c_Click_Through_Rate43491",
+  "$id": "c_Agent_Desktop_Click_Through_Rate",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
   "name": "Click Through Rate",
   "description": "Answers Click Through Rate by Answers Experience",
@@ -12,19 +12,15 @@
     ],
     "filters": [
       {
-        "filter": "yext/date",
-        "in": "DAYS_30"
-      },
-      {
-        "filter": "yext/ANSWERS_TRAFFIC_TYPE",
-        "in": [
-          "EXTERNAL"
-        ]
-      },
-      {
         "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
         "in": [
           "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "AGENT_DESKTOP"
         ]
       }
     ]

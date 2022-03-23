@@ -1,5 +1,5 @@
 {
-  "$id": "c_Search_Performance_by_Week43494",
+  "$id": "c_Agent_Desktop_Search_Performance_by_Week_2",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
   "name": "Search Performance by Week",
   "description": "Answers Sessions, Answers Searches, Answers Clicks, and Knowledge Graph Result Rate by Week",
@@ -15,19 +15,15 @@
     ],
     "filters": [
       {
-        "filter": "yext/date",
-        "in": "WEEKS_4"
-      },
-      {
-        "filter": "yext/ANSWERS_TRAFFIC_TYPE",
-        "in": [
-          "EXTERNAL"
-        ]
-      },
-      {
         "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
         "in": [
           "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "AGENT_DESKTOP"
         ]
       }
     ]

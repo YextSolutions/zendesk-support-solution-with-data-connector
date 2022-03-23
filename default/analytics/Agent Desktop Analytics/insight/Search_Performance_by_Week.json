@@ -1,16 +1,17 @@
 {
-  "$id": "c_Case_Deflection_hero_line_chart_case_deflections",
+  "$id": "c_Agent_Desktop_Search_Performance_by_Week",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
-  "name": "Support Search Overview",
-  "description": "Overview of how Support Search is performing at the Case Submission Page.",
+  "name": "Search Performance by Week",
+  "description": "Answers Sessions, Answers Searches, Answers Clicks, and Knowledge Graph Result Rate by Week",
   "query": {
     "metrics": [
-      "yext/ANSWERS_CASE_STARTS",
-      "yext/ANSWERS_CASE_SUBMITS",
-      "yext/ANSWERS_CASE_DEFLECTIONS"
+      "yext/ANSWERS_SESSIONS",
+      "yext/ANSWERS_SEARCHES",
+      "yext/ANSWERS_CLICKS",
+      "yext/ANSWERS_KG_RESULT_RATE"
     ],
     "dimensions": [
-      "yext/DAYS"
+      "yext/WEEKS"
     ],
     "filters": [
       {
@@ -22,16 +23,14 @@
       {
         "filter": "yext/ANSWERS_QUERY_SOURCE",
         "in": [
-          "CASE_DEFLECTION"
+          "AGENT_DESKTOP"
         ]
       }
     ]
   },
   "display": {
     "line": {
-      "heroNumbers": {
-        "show": true
-      }
+      "showLabels": true
     }
   }
 }

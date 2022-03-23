@@ -1,16 +1,15 @@
 {
-  "$id": "c_Case_Deflection_deflected_search_terms",
+  "$id": "c_Help_Site_Searches_Clicks_by_Search_Vertical",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
-  "name": "Deflected Search Terms",
-  "description": "Search Terms that were deflected by Support Search.",
+  "name": "Searches \u0026 Clicks by Search Vertical",
+  "description": "Answers Searches and Answers Clicks by Search Vertical",
   "query": {
     "metrics": [
-      "yext/ANSWERS_CASE_DEFLECTIONS",
-      "yext/ANSWERS_CASE_DEFLECTION_RATE",
-      "yext/ANSWERS_KG_RESULT_RATE"
+      "yext/ANSWERS_SEARCHES",
+      "yext/ANSWERS_CLICKS"
     ],
     "dimensions": [
-      "yext/ANSWERS_SEARCH_TERM"
+      "yext/ANSWERS_SEARCH_VERTICAL"
     ],
     "filters": [
       {
@@ -22,7 +21,7 @@
       {
         "filter": "yext/ANSWERS_QUERY_SOURCE",
         "in": [
-          "CASE_DEFLECTION"
+          "HELP_SITE"
         ]
       }
     ]
@@ -31,7 +30,7 @@
     "table": {
       "sort": {
         "column": {
-          "metric": "yext/ANSWERS_CASE_DEFLECTIONS"
+          "metric": "yext/ANSWERS_SEARCHES"
         },
         "descending": true
       }

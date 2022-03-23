@@ -1,5 +1,5 @@
 {
-  "$id": "c_Searches_by_Referrer_URL43345",
+  "$id": "c_Agent_Desktop_Searches_by_Referrer_URL",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
   "name": "Searches by Referrer URL",
   "description": "Answers Sessions, Answers Searches, Answers Clicks, and Answers Click Through Rate by Referrer URL",
@@ -15,13 +15,15 @@
     ],
     "filters": [
       {
-        "filter": "yext/date",
-        "in": "DAYS_30"
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
       },
       {
-        "filter": "yext/ANSWERS_TRAFFIC_TYPE",
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
         "in": [
-          "EXTERNAL"
+          "AGENT_DESKTOP"
         ]
       }
     ]
