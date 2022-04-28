@@ -5,25 +5,14 @@
   "entityType": "helpArticle",
   "source": {
     "sourceConfig": {
-      "apiPullConfig": {
-        "requestType": "GET",
-        "url": "https://${{zendeskSubdomain}}.zendesk.com/api/v2/help_center/en-us/articles.json",
-        "paginationControl": {
-          "cursorPagination": {
-            "cursor": "next_page",
-            "cursorType": "FULL_URL",
-            "detectCursorInHeader": false
-          }
-        },
-        "headers": {},
-        "queryParams": {},
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "zendesk",
+        "operation": "fetchHelpArticles",
+        "inputs": {
+          "zendeskLocale": "${{zendeskLocale}}",
+          "zendeskSubdomain": "${{zendeskSubdomain}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "articles",
-      "path": "articles"
     },
     "selectors": [
       {
@@ -167,6 +156,6 @@
       "startTime": "03:00",
       "frequencyType": "DAILY"
     },
-    "runMode": "DEFAULT"
+    "runMode": "COMPREHENSIVE"
   }
 }
