@@ -9,8 +9,8 @@
         "source": "zendesk",
         "operation": "fetchHelpArticles",
         "inputs": {
-          "zendeskLocale": "${{zendeskLocale}}",
-          "zendeskSubdomain": "en-us"
+          "zendeskLocale": "en-us",
+          "zendeskSubdomain": "${{zendeskSubdomain}}"
         }
       }
     },
