@@ -10,7 +10,7 @@
         "operation": "fetchHelpArticles",
         "inputs": {
           "zendeskLocale": "${{zendeskLocale}}",
-          "zendeskSubdomain": "${{zendeskSubdomain}}"
+          "zendeskSubdomain": "en-us"
         }
       }
     },
