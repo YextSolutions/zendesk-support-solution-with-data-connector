@@ -1,0 +1,6 @@
+{
+    "$id": "smolder-commuting-override-f9211",
+    "$schema": "https://schema.yext.com/config/pages/repository/v1",
+    "repoUrl": "github.com/yext-pages/zendesk-template-answers-site-${{businessId}}.com",
+    "templateRepo": "github.com/yext-pages/answers-template-help-site"
+}
