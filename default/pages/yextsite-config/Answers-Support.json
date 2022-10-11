@@ -5,15 +5,15 @@
     "repoConfig": "smolder-commuting-override-f9211",
     "domainConfig": "supportembed.pagescdn.com",
     "siteSettings": {
-      "autoDeploy": true,
-      "autoStage": true,
-      "autoPublish": false,
-      "pullRequestsEnabled": false,
-      "stagingCredentials": {
-        "password": "test",
-        "username": "test"
-      }
-    },
+        "autoDeploy": true,
+        "autoStage": true,
+        "autoPublish": false,
+        "pullRequestsEnabled": false,
+        "stagingCredentials": {
+          "password": "",
+          "username": ""
+        }
+      },
     "branches": [
       {
         "name": "master",
