@@ -1,0 +1,56 @@
+{
+  "$id": "supportAnalytics_Help_Site_Search_Terms_with_Direct_Answer",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Top Search Terms with Direct Answer",
+  "description": "Searches by Search Term with a Direct Answer (DA). Identify Top Search Terms with DA",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_SEARCH_TERM"
+    ],
+    "filters": [
+      {
+        "filter": "yext/ANSWERS_BLANK_SEARCH_TERM",
+        "in": [
+          "false"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_HAS_DIRECT_ANSWER",
+        "in": [
+          "true"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "HELP_SITE"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/IS_HUMAN",
+        "in": [
+          "true"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_SEARCHES"
+        },
+        "descending": true
+      }
+    }
+  }
+}

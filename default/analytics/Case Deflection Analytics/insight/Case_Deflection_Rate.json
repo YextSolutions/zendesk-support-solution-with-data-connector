@@ -1,11 +1,11 @@
 {
-  "$id": "supportAnalytics_Agent_Desktop_Click_Through_Rate",
+  "$id": "supportAnalytics_Case_Deflection_Rate",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
-  "name": "Click Through Rate",
-  "description": "Answers Click Through Rate for Agent Desktop Search",
+  "name": "Case Deflection Rate",
+  "description": "Case Deflection Rate by Answers Experience",
   "query": {
     "metrics": [
-      "yext/ANSWERS_CLICK_THROUGH_RATE"
+      "yext/ANSWERS_CASE_DEFLECTION_RATE"
     ],
     "dimensions": [
       "yext/ANSWERS_EXPERIENCE"
@@ -20,7 +20,7 @@
       {
         "filter": "yext/ANSWERS_QUERY_SOURCE",
         "in": [
-          "AGENT_DESKTOP"
+          "CASE_DEFLECTION"
         ]
       }
     ]

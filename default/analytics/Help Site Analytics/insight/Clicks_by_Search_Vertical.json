@@ -2,7 +2,7 @@
   "$id": "supportAnalytics_Help_Site_Clicks_by_Search_Vertical",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
   "name": "Clicks by Search Vertical",
-  "description": "Answers Clicks by Search Vertical",
+  "description": "Answers Clicks by Search Vertical. Discover which verticals have the highest user engagement.",
   "query": {
     "metrics": [
       "yext/ANSWERS_CLICKS"

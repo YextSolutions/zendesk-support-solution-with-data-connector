@@ -4,102 +4,115 @@
   "name": "Agent Desktop Analytics",
   "insights": [
     {
-      "insight": "supportAnalytics_Agent_Desktop_Knowledge_Graph_Result_Rate",
+      "insight": "supportAnalytics_Agent_Desktop_Searches_and_Sessions_by_Month",
       "x": 0,
       "y": 0,
+      "width": 6,
+      "height": 1
+    },
+    {
+      "insight": "supportAnalytics_Agent_Desktop_Search_Performance_by_Week",
+      "x": 0,
+      "y": 1,
+      "width": 6,
+      "height": 2
+    },
+    {
+      "insight": "supportAnalytics_Agent_Desktop_Knowledge_Graph_Result_Rate",
+      "x": 0,
+      "y": 3,
       "width": 2,
       "height": 1
     },
     {
       "insight": "supportAnalytics_Agent_Desktop_Result_Rate_by_Week",
       "x": 2,
-      "y": 0,
+      "y": 3,
       "width": 4,
       "height": 1
     },
     {
       "insight": "supportAnalytics_Agent_Desktop_Click_Through_Rate",
       "x": 0,
-      "y": 1,
+      "y": 4,
       "width": 2,
       "height": 1
     },
     {
       "insight": "supportAnalytics_Agent_Desktop_Click_Through_Rate_by_Week",
       "x": 2,
-      "y": 1,
+      "y": 4,
       "width": 4,
       "height": 1
     },
     {
-      "insight": "supportAnalytics_Agent_Desktop_Clicks_by_Result_Vertical_Position",
+      "insight": "supportAnalytics_Agent_Desktop_Click_Through_Rate_Overview",
       "x": 0,
-      "y": 2,
-      "width": 3,
-      "height": 2
-    },
-    {
-      "insight": "supportAnalytics_Agent_Desktop_Search_Clicks_by_Vertical_Position",
-      "x": 3,
-      "y": 2,
-      "width": 3,
+      "y": 5,
+      "width": 6,
       "height": 2
     },
     {
       "insight": "supportAnalytics_Agent_Desktop_Clicks_by_Search_Vertical",
       "x": 0,
-      "y": 4,
+      "y": 7,
       "width": 3,
       "height": 2
     },
     {
       "insight": "supportAnalytics_Agent_Desktop_Searches_Clicks_by_Search_Vertical",
       "x": 3,
-      "y": 4,
+      "y": 7,
       "width": 3,
       "height": 2
     },
     {
-      "insight": "supportAnalytics_Agent_Desktop_Unique_Queries",
-      "x": 0,
-      "y": 6,
-      "width": 6,
-      "height": 1
-    },
-    {
-      "insight": "supportAnalytics_Agent_Desktop_Search_Performance_by_Week",
-      "x": 0,
-      "y": 7,
-      "width": 6,
-      "height": 2
-    },
-    {
-      "insight": "supportAnalytics_Agent_Desktop_Search_Performance_by_Week",
+      "insight": "supportAnalytics_Agent_Desktop_Search_Term_Performance",
       "x": 0,
       "y": 9,
       "width": 6,
       "height": 2
     },
     {
-      "insight": "supportAnalytics_Agent_Desktop_Click_Through_Rate_Overview",
+      "insight": "supportAnalytics_Agent_Desktop_Most_Helpful_Entities",
       "x": 0,
       "y": 11,
       "width": 6,
       "height": 2
     },
     {
-      "insight": "supportAnalytics_Agent_Desktop_Search_Term_Performance",
+      "insight": "supportAnalytics_Agent_Desktop_Agent_Activity",
       "x": 0,
       "y": 13,
       "width": 6,
       "height": 2
     },
     {
-      "insight": "supportAnalytics_Agent_Desktop_Searches_by_Referrer_URL",
+      "insight": "supportAnalytics_Agent_Desktop_Searches_with_Direct_Answers",
       "x": 0,
       "y": 15,
+      "width": 3,
+      "height": 2
+    },
+    {
+      "insight": "supportAnalytics_Agent_Desktop_Searches_with_No_Direct_Answer",
+      "x": 3,
+      "y": 15,
+      "width": 3,
+      "height": 2
+    },
+    {
+      "insight": "supportAnalytics_Agent_Desktop_Searches_by_Search_Term_Word_Count_Table",
+      "x": 0,
+      "y": 17,
       "width": 6,
       "height": 2
+    }
+  ],
+  "filters": [
+    {
+      "filter": "yext/date",
+      "in": "WEEKS_12"
     }
   ]
 }

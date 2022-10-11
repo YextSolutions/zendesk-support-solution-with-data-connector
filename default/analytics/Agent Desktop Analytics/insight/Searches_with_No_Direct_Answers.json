@@ -1,30 +1,36 @@
 {
-  "$id": "supportAnalytics_Agent_Desktop_Search_Term_Performance",
+  "$id": "supportAnalytics_Agent_Desktop_Searches_with_No_Direct_Answer",
   "$schema": "https://schema.yext.com/config/analytics/insight/v1",
-  "name": "Search Term Performance",
-  "description": "Answers Sessions, Answers Searches, Answers Clicks, Knowledge Graph Result Rate, and Answers Click Through Rate by Search Term (Normalized)",
+  "name": "Searches with No Direct Answer",
+  "description": "Searches by Search Term that Return No Direct Answer",
   "query": {
     "metrics": [
-      "yext/ANSWERS_SESSIONS",
-      "yext/ANSWERS_SEARCHES",
-      "yext/ANSWERS_CLICKS",
-      "yext/ANSWERS_KG_RESULT_RATE",
-      "yext/ANSWERS_CLICK_THROUGH_RATE"
+      "yext/ANSWERS_SEARCHES"
     ],
     "dimensions": [
       "yext/ANSWERS_SEARCH_TERM"
     ],
     "filters": [
       {
-        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "filter": "yext/date",
+        "in": "DAYS_14"
+      },
+      {
+        "filter": "yext/ANSWERS_HAS_DIRECT_ANSWER",
         "in": [
-          "AGENT_DESKTOP"
+          "false"
         ]
       },
       {
         "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
         "in": [
           "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "AGENT_DESKTOP"
         ]
       }
     ]

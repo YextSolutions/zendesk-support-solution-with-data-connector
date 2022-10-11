@@ -1,0 +1,65 @@
+{
+  "$id": "supportAnalytics_Help_Site_Direct_Answer_No_Engagement",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Direct Answers with No DA Engagement (Low DA Accuracy)",
+  "description": "Total Searches by Direct Answers (DA) Field Value and Search Term. Examine which DA that surfaced as a DA result, but did not receive clicks. If a Search Click Through Rate is \u003e0%, then a non-DA entity was clicked from the returned results rather than the DA entity.",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES",
+      "yext/ANSWERS_CLICK_THROUGH_RATE"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_SEARCH_TERM"
+    ],
+    "filters": [
+      {
+        "filter": "yext/ANSWERS_DIRECT_FIELD_TYPE",
+        "in": [
+          "RICH_TEXT",
+          "MULTI_LINE_TEXT",
+          "SINGLE_LINE_TEXT"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_DIRECT_ANSWER_CLICK",
+        "in": [
+          "false"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_HAS_KG_RESULTS",
+        "in": [
+          "true"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "HELP_SITE"
+        ]
+      },
+      {
+        "filter": "yext/IS_HUMAN",
+        "in": [
+          "true"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_SEARCHES"
+        },
+        "descending": true
+      }
+    }
+  }
+}
