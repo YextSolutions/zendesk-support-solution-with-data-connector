@@ -7,7 +7,7 @@
     "siteSettings": {
         "autoDeploy": true,
         "autoStage": true,
-        "autoPublish": true,
+        "autoPublish": false,
         "pullRequestsEnabled": false,
         "stagingCredentials": {
           "password": "",
