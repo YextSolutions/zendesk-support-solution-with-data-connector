@@ -7,11 +7,11 @@
     "siteSettings": {
         "autoDeploy": true,
         "autoStage": true,
-        "autoPublish": false,
+        "autoPublish": true,
         "pullRequestsEnabled": false,
         "stagingCredentials": {
-          "password": "",
-          "username": ""
+          "password": "test",
+          "username": "test"
         }
       },
     "branches": [
