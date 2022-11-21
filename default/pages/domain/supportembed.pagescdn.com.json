@@ -1,7 +1,7 @@
 {
-  "$id": "supportembed.pagescdn.com",
+  "$id": "yextembed.pagescdn.com",
   "$schema": "https://schema.yext.com/config/pages/domain/v1",
-  "domainName": "${{businessId}}.supportembed.com",
+  "domainName": "${{businessId}}.yextembed.com",
   "autoGenerateSitemap": false,
   "domainAccess": false,
   "pagesCDNAccess": true,
