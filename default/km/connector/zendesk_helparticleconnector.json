@@ -1,8 +1,10 @@
 {
   "$id": "zendesk_helparticleconnector",
-  "$schema": "https://schema.yext.com/config/km/connector/v2",
+  "$schema": "https://schema.yext.com/config/km/connector/v4",
   "displayName": "Zendesk Help Article Connector",
-  "entityType": "helpArticle",
+  "entityTypes": [
+    "helpArticle"
+  ],
   "source": {
     "sourceConfig": {
       "nativeSourceConfig": {
@@ -99,63 +101,81 @@
   ],
   "mappings": [
     {
-      "field": "promoted",
       "header": "Promoted",
-      "subfieldPath": []
+      "field": "promoted",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
     },
     {
-      "field": "entityId",
-      "header": "ID",
-      "subfieldPath": []
-    },
-    {
-      "field": "keywords",
-      "header": "Label Names",
-      "subfieldPath": []
-    },
-    {
-      "field": "voteCount",
-      "header": "Vote Count",
-      "subfieldPath": []
-    },
-    {
-      "field": "body",
-      "header": "Body",
-      "subfieldPath": []
-    },
-    {
-      "field": "landingPageUrl",
-      "header": "URL",
-      "subfieldPath": []
-    },
-    {
-      "field": "name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "voteSum",
-      "header": "Vote Sum",
-      "subfieldPath": []
-    },
-    {
-      "field": "externalArticlePostDate",
       "header": "Date Created_Converted",
-      "subfieldPath": []
+      "field": "externalArticlePostDate",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
     },
     {
-      "field": "externalArticleUpdateDate",
+      "header": "ID",
+      "field": "entityId",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Label Names",
+      "field": "keywords",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Vote Count",
+      "field": "voteCount",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
       "header": "Date Updated_Converted",
-      "subfieldPath": []
+      "field": "externalArticleUpdateDate",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "URL",
+      "field": "landingPageUrl",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Name",
+      "field": "name",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Vote Sum",
+      "field": "voteSum",
+      "subfieldPath": [],
+      "clearValueIfBlank": false
+    },
+    {
+      "header": "Body",
+      "field": "bodyV2",
+      "subfieldPath": [
+        {
+          "name": "markdown"
+        }
+      ],
+      "clearValueIfBlank": false
     }
   ],
   "scheduleConfig": {
     "customSchedule": {
       "timeZone": "America/New_York",
-      "startDate": "2021-05-19",
-      "startTime": "03:00",
+      "startDate": "2023-07-26",
+      "startTime": "00:00",
       "frequencyType": "DAILY"
     },
     "runMode": "COMPREHENSIVE"
+  },
+  "comprehensiveModeConfig": {
+    "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+    "actionOnMissingEntities": "DELETE"
   }
 }

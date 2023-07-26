@@ -15,7 +15,6 @@
         "helpArticle"
       ],
       "name": "Help Articles",
-      "savedSearchId": "347436448",
       "searchableFields": {
         "body": {
           "documentSearch": true
@@ -46,6 +45,7 @@
   },
   "localizations": {},
   "additionalSearchablePlaces": [],
+  "markdownToHTML": true,
   "querySuggestions": {
     "disablePopularQueries": false,
     "popularQueriesBlacklistedTerms": [],

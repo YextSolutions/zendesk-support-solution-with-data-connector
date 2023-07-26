@@ -4,7 +4,6 @@
   "name": "zendeskSupportSolution_Help Article-default",
   "entityType": "helpArticle",
   "fields": [
-    "c_activeInAnswers",
     "c_helpArticleCategory"
   ]
 }
