@@ -1,0 +1,45 @@
+{
+  "$id": "supportAnalytics_Help_Site_Search_Frequency_by_User",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Search Frequency by User",
+  "description": "Search Frequency by Visitor ID and Visitor ID Method. Identify your power users. Note: Data is limited based on available Visitor ID tracking.",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "dimensions": [
+      "yext/VISITOR_ID",
+      "yext/VISITOR_ID_METHOD"
+    ],
+    "filters": [
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "HELP_SITE"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/IS_HUMAN",
+        "in": [
+          "true"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_SEARCHES"
+        },
+        "descending": true
+      }
+    }
+  }
+}

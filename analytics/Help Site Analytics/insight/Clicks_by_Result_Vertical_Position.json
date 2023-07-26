@@ -1,0 +1,33 @@
+{
+  "$id": "supportAnalytics_Help_Site_Clicks_by_Result_Vertical_Position",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Clicks by Result Vertical Position",
+  "description": "Answers Clicks by Result Vertical Position",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_CLICKS"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_RESULT_VERTICAL_POSITION"
+    ],
+    "filters": [
+      {
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "HELP_SITE"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "pie": {
+      "showLabels": true
+    }
+  }
+}

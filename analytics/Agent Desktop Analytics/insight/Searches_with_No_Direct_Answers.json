@@ -1,0 +1,48 @@
+{
+  "$id": "supportAnalytics_Agent_Desktop_Searches_with_No_Direct_Answer",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Searches with No Direct Answer",
+  "description": "Searches by Search Term that Return No Direct Answer",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "dimensions": [
+      "yext/ANSWERS_SEARCH_TERM"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_14"
+      },
+      {
+        "filter": "yext/ANSWERS_HAS_DIRECT_ANSWER",
+        "in": [
+          "false"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
+        "in": [
+          "PRODUCTION"
+        ]
+      },
+      {
+        "filter": "yext/ANSWERS_QUERY_SOURCE",
+        "in": [
+          "AGENT_DESKTOP"
+        ]
+      }
+    ]
+  },
+  "display": {
+    "table": {
+      "sort": {
+        "column": {
+          "metric": "yext/ANSWERS_SEARCHES"
+        },
+        "descending": true
+      }
+    }
+  }
+}
