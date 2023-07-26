@@ -20,12 +20,6 @@
         "in": [
           "AGENT_DESKTOP"
         ]
-      },
-      {
-        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
-        "in": [
-          "PRODUCTION"
-        ]
       }
     ]
   },

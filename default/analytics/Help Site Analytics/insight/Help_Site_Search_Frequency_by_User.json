@@ -19,12 +19,6 @@
         ]
       },
       {
-        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
-        "in": [
-          "PRODUCTION"
-        ]
-      },
-      {
         "filter": "yext/IS_HUMAN",
         "in": [
           "true"

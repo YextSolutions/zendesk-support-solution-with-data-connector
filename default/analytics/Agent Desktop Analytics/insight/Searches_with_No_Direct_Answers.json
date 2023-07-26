@@ -22,12 +22,6 @@
         ]
       },
       {
-        "filter": "yext/ANSWERS_CONFIGURATION_VERSION_LABEL",
-        "in": [
-          "PRODUCTION"
-        ]
-      },
-      {
         "filter": "yext/ANSWERS_QUERY_SOURCE",
         "in": [
           "AGENT_DESKTOP"
