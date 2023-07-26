@@ -6,17 +6,12 @@
   "countryRestrictions": [],
   "verticals": {
     "help_articles": {
-      "directAnswers": {
-        "featuredSnippets": {
-          "predictionMode": "ALLOW_ALL"
-        }
-      },
       "entityTypes": [
         "helpArticle"
       ],
       "name": "Help Articles",
       "searchableFields": {
-        "body": {
+        "bodyV2": {
           "documentSearch": true
         },
         "builtin.entityType": {
@@ -27,7 +22,7 @@
         }
       },
       "sortBys": [],
-      "source": "KNOWLEDGE_MANAGER"
+      "source": "YEXT"
     }
   },
   "synonyms": {
@@ -41,14 +36,17 @@
         "guides",
         "help articles"
       ]
-    ]
+    ],
+    "normalization": []
   },
   "localizations": {},
   "additionalSearchablePlaces": [],
   "markdownToHTML": true,
   "querySuggestions": {
     "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
     "popularQueriesBlacklistedTerms": [],
+    "popularQueriesBlacklistedRegex": [],
     "universalPrompts": [
       "Help Articles",
       "How-to Guides"
