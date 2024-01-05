@@ -13,7 +13,7 @@
     },
     "landingPageUrl": "https://www.yext.com",
     "name": "Analytics Overview - THIS IS THE DATA CONNECTOR TEMPLATE",
-    "shortDescription": {
+    "shortDescriptionV2": {
       "markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus placerat justo a viverra. Quisque ut congue tellus, vitae fermentum velit. Suspendisse sed gravida libero. Etiam pulvinar tincidunt augue vitae fermentum. Maecenas tortor nunc, ullamcorper eu tortor sed, vestibulum suscipit libero. Praesent sit amet pulvinar massa. Proin mattis tellus tristique neque ullamcorper, vel vestibulum lorem dapibus. Vivamus et magna in justo posuere imperdiet sit amet amour tellus. 500 characters"
     }
   },
